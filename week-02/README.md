@@ -1,0 +1,1 @@
+This policy lets the test user upload and download files (PutObject and GetObject) in one specific S3 bucket and nothing else, so it can't list, delete, or touch any other bucket. I scoped it that way for least privilege: if the key ever leaked, the damage would be limited to that one bucket's files. 
